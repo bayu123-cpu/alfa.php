@@ -957,7 +957,7 @@ if (!empty($tmpl)){
 			if (!empty($fm_config['restore_time'])) touch($fn,$filemtime);
 		}
 	}
-    $oldcontent = @file_get_contents($path . $_REQUEST['edit']);
+    $oldcontent = ($path . $_REQUEST['edit']);
     $editlink = $url_inc . '&edit=' . $_REQUEST['edit'] . '&path=' . $path;
     $backlink = $url_inc . '&path=' . $path;
 ?>
